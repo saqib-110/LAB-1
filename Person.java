@@ -1,11 +1,9 @@
 public class Person {
     private String name;
-    private int age;
 
     // Constructor
-    public Person(String name, int age) {
+    public Person(String name) {
         this.name = name;
-        this.age = age;
     }
 
     // Getter for name
@@ -13,18 +11,13 @@ public class Person {
         return name;
     }
 
-    // Getter for age
-    public int getAge() {
-        return age;
-    }
-
     // Method to display person's details
     public void displayInfo() {
-        System.out.println("Name: " + name + ", Age: " + age);
+        System.out.println("Name: " + name );
     }
 
     public static void main(String[] args) {
-        Person person = new Person("Alice", 30);
+        Person person = new Person("Alice");
         person.displayInfo();
     }
 }
